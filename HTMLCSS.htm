@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang = "en-IN">
+    <head >
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML,CSS,JavaScript">
+        <meta name="description" content="Sample Website">
+        <meta name="author" content="Vernika Chauhan">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"
+        <title> SampleHomepage</title>
+        <link href="Images\favicon (1).ico" rel="icon" type="image/x-icon">
+        <style>
+            a:link{
+            color:green;
+            background-color:transparent;
+            text-decoration:none;
+            }
+            a:visited{
+                color:pink;
+                background-color:transparent;
+                text-decoration:none;    
+            }
+            a:hover{
+                color:red;
+                background-color:transparent;
+                text-decoration:underline;    
+            }
+            a:active{
+                color:purple;
+                background-color:transparent;
+                text-decoration:underline;    
+            }
+
+            .borderBtn{
+            color: coral;
+            border: 2px solid purple;
+            padding: 3px,3px,3px,3px;
+            background-color: transparent;
+            text-align: center;
+            text-decoration: none;
+            }
+
+            table{
+                border-style: solid;
+                width: 50%;
+                border-spacing: 5px;
+            }
+            
+            td, tr, th{
+                border: 0.5px dotted black;
+                border-radius: 10px;
+            }
+
+            th{
+                background-color: gainsboro;
+            }
+
+            td,th{
+                width: auto;
+                height: 25px;
+                padding-top: 10px;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-bottom: 10px
+            }
+
+            td{
+                text-align: left;
+            }
+
+            <!-- tr:nth-child(even){
+                background-color: bisque;
+
+            }
+
+            tr:nth-child(odd){
+                background-color: burlywood;
+            } -->
+
+            tr:hover{
+                background-color: blueviolet;
+                cursor: pointer;
+
+            }
+
+            th:hover{
+                background-color: palevioletred;
+            }
+
+            li:hover{
+                background-color: blueviolet;
+            }
+            li{
+                float: right;
+                margin-right: 18px;
+            }
+
+        </style>
+
+        <body>
+            <div class="para">
+                <p onclick="myfunction()"  style="background-image: url(Flowers.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">This is a paragraph</p>
+            </div>
+
+            <div id="image_map" class="para">
+                <img src = "https://html.com/wp-content/uploads/image_map_example.jpg" src = "imagemap" width= "500" height="332" usemap="#workmap">
+                    <map name = "workmap">
+                        <area href = "https://facebook.com"  onclick = "fbfunction()" pointer:cursor alt = "facebook" target="_blank" shape=poly coords="20,165 , 255,62, 633,481, 402,635"></area>
+                        <area href="https://en.wikipedia.org/wiki/Social_media" onclick="smfunction()" cursor:pointer alt="Socialmedia" target="_blank" shape="poly" coords="411,153, 871,151, 977,300, 588,311, 571,243, 437,215"></area>
+                    </map> 
+            </div>   
+            
+            <picture>
+                <source media="(min-width:650px)" srcset="/download.jpg">
+                <source media="(min-width:450px)" srcset="/download.jpg">
+                <img src="/download.jpg">
+            </picture>
+
+            <div class="table">
+                <table>
+                    <caption> Customer data </caption> <!--Caption is the name of the table written inside the table HTML tag-->
+                        <tr>
+                            <th>Company</th>
+                            <th>Contact</th>
+                            <th>Country</th>
+                        </tr>
+
+                        <tr>
+                            <td>Alfreds Futterkiste</td>
+                            <td>Maria Anders</td>
+                            <td>Germany</td> 
+                        </tr>
+
+                        <tr>
+                            <td>Centro comercial Moctezuma</td>
+                            <td>Francisco Chang</td>
+                            <td>Mexico</td>
+                        </tr>
+
+                        <tr>
+                            <td>Ernst Handel</td>
+                            <td>Roland Mendel</td>
+                            <td>Austria</td>
+                        </tr>
+
+                        <tr>
+                            <td>Island Trading</td>
+                            <td>Helen Bennett</td>
+                            <td>UK</td>
+                        </tr>
+
+                        <tr>
+                            <td>Laughing Bacchus Winecellars</td>
+                            <td>Yoshi Tannamuri</td>
+                            <td>Canada</td>
+                        </tr>
+
+                        <tr>
+                            <td>Magazzini Alimentari Riuniti</td>
+                            <td>Giovanni Rovelli</td>
+                            <td>Italy</td>
+                        </tr>
+                </table>
+            </div>
+
+            <h3>Unordered HTML list</h3>
+
+            <ul name="Fruits" style="list-style-type: none;">
+                <li><a href="https://google.com">Circle</a></li>
+                <li><a href="https://google.com">Triangle</a></li>
+                <li><a href="https://google.com">Rectangle</a></li>
+                <li><a href="https://google.com">Polygon</a></li>
+                <li><a href="https://google.com">Square</a></li>
+            </ul>
+
+            <ol name="Fruits" start="0 ">
+                <li><a href="https://google.com">Circle</a></li>
+                <li><a href="https://google.com">Triangle</a></li>
+                <li><a href="https://google.com">Rectangle</a></li>
+                <li><a href="https://google.com">Polygon</a></li>
+                <li><a href="https://google.com">Square</a></li>
+            </ol>
+
+            <h3>Description list</h3>
+            
+            <dl id="Color" name="Colours">
+                <dt>Red</dt><dd>Red is the colour of danger</dd>
+                <dt>White</dt><dd>White is the colour of peace</dd>
+            </dl>
+
+            <p> This is an inline element <span style="border: 2px solid Black;"> Hello World </span> </p>
+
+            <!-- <h4 id="google">Google</h4>
+            <a href="#google">Google </a> -->
+
+            <h4 id="google"><a href="#google" target="_blank">Google</a></h4>
+
+            <iframe src="https://instagram.com" title="tooltip" style="border: none;"></iframe>
+
+        </body>
+
+        <script>
+            function fbfunction(){
+                alert("Are you sure you want to navigate to facebook.com? Click OK to continue.")
+            }
+
+            function smfunction(){
+                alert("You are trying to navigate to Socialmedia page on wikipedia.Click OK to continue")
+            }
+            function fumctionname(){
+                var x = document.getElementsByClassName('city');
+                for(var i = 0; i< x.length ; i++){
+                    x[i].style.length= "none"
+                }
+            }
+            function secondfunc(){
+               var x = document.getElementById('google').innerHTML='Have a nice day'
+               return x;
+            }
+
+            
+        </script>
+    </head>
+</html>
