@@ -5,8 +5,8 @@ dict = {}
 #Normal Dictionary
 
 d1 = {'Vernika':'Samosa',   #Dict value can be list, tuple, dict.
-      'Kartika':'Dosa',
-      'Arjun':'Momos'}
+      'xyz':'Dosa',
+      'pqr':'Momos'}
 
 print(d1)
 print(d1['Vernika']) #To access specific values of a key in dict
@@ -15,7 +15,7 @@ print(d1['Arjun'])
 d1['Ritesh'] = 'DalChawal'#To add new Key into dictionary
 print(d1)
 
-del(d1['Arjun'])#To delete key from dictionary
+del(d1['pqr'])#To delete key from dictionary
 print(d1)
 
 d1['Riya'] = {'B': 'Alooparatha',
@@ -25,7 +25,7 @@ d1['Riya'] = {'B': 'Alooparatha',
 print(d1)
 
 d2 = d1.copy()
-del(d2['Kartika'])
+del(d2['xyz'])
 print(d2)
 print(d1)
 
